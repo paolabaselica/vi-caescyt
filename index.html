@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VI CAESCyT - Congreso Argentino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      scroll-behavior: smooth;
+    }header {
+  background: linear-gradient(to right, #6e33a1, #00d8e0, #6cbf7f, #ffcc4a, #f96c3b, #ff4db4);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header img {
+  width: 200px;
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff4db4;
+}
+
+section {
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  border: none;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.1);
+}
+
+.twitter { background: #1DA1F2; }
+.facebook { background: #1877F2; }
+.instagram { background: #E4405F; }
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head><body>
+  <header>
+    <img src="logo_caescyt.png" alt="Logo VI CAESCyT">
+    <h1>VI Congreso Argentino de Estudios Sociales de la Ciencia y la Tecnología</h1>
+  </header>  <nav>
+    <a href="#registro">Inscripción</a>
+    <a href="#resumenes">Resúmenes</a>
+    <a href="#trabajos">Trabajos</a>
+    <a href="#mapa">Ubicación</a>
+  </nav>  <section id="registro">
+    <h2>Inscripción</h2>
+    <div class="iframe-container">
+      <script src="https://www.aacademica.org/vendor/js/iframe-resizer/3.5.14/iframeResizer.min.js"></script>
+      <iframe onload='iFrameResize({heightCalculationMethod: "max"}, this);' scrolling="no" src='https://www.aacademica.org/embedded/vi.caescyt'></iframe>
+    </div>
+  </section>  <section id="resumenes">
+    <h2>Resúmenes</h2>
+    <div class="iframe-container">
+      <script src="https://www.aacademica.org/vendor/js/iframe-resizer/3.5.14/iframeResizer.min.js"></script>
+      <iframe onload='iFrameResize({heightCalculationMethod: "max"}, this);' scrolling="no" src='https://www.aacademica.org/embedded-list/vi.caescyt/abstracts'></iframe>
+    </div>
+  </section>  <section id="trabajos">
+    <h2>Trabajos completos</h2>
+    <div class="iframe-container">
+      <script src="https://www.aacademica.org/vendor/js/iframe-resizer/3.5.14/iframeResizer.min.js"></script>
+      <iframe onload='iFrameResize({heightCalculationMethod: "max"}, this);' scrolling="no" src='https://www.aacademica.org/embedded-list/vi.caescyt/proceedings'></iframe>
+    </div>
+  </section>  <section id="mapa">
+    <h2>¿Dónde se realiza?</h2>
+    <div class="iframe-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6861590161275!2d-58.41730908477074!3d-34.611780880455664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb29ef7f2a7b%3A0x5f6b117ffef44a7d!2sUniversidad%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1614690788579!5m2!1ses!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>  <section>
+    <h2>Seguí el congreso en redes</h2>
+    <div class="social-buttons">
+      <a href="#" class="twitter">Twitter</a>
+      <a href="#" class="facebook">Facebook</a>
+      <a href="#" class="instagram">Instagram</a>
+    </div>
+  </section>  <footer>
+    VI CAESCyT - Congreso Argentino de Estudios Sociales de la Ciencia y la Tecnología. Diseño sin fines de lucro.
+  </footer>
+</body></html>
