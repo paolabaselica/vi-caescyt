@@ -12,135 +12,160 @@
       background-color: #ffffff;
       color: #222;
       scroll-behavior: smooth;
-    }header {
-  background: linear-gradient(to right, #6e33a1, #00d8e0, #6cbf7f, #ffcc4a, #f96c3b, #ff4db4);
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-  animation: fadeIn 2s ease-in-out;
-}
+    }
+    header {
+      background: linear-gradient(to right, #6e33a1, #00d8e0, #6cbf7f, #ffcc4a, #f96c3b, #ff4db4);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
 
-header img {
-  width: 200px;
-  max-width: 90%;
-  margin-bottom: 1rem;
-}
+    header img {
+      width: 200px;
+      max-width: 90%;
+      margin-bottom: 1rem;
+    }
 
-header h1 {
-  font-size: 1.8rem;
-  margin: 0;
-}
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
 
-nav {
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+    nav {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-nav a:hover {
-  color: #ff4db4;
-}
+    nav a:hover {
+      color: #ff4db4;
+    }
 
-section {
-  padding: 2rem 1.5rem;
-  max-width: 900px;
-  margin: auto;
-}
+    section {
+      padding: 2rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+    }
 
-.iframe-container iframe {
-  width: 100%;
-  border: none;
-}
+    .iframe-container iframe {
+      width: 100%;
+      border: none;
+    }
 
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
 
-.social-buttons a {
-  text-decoration: none;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: transform 0.2s;
-}
+    .social-buttons a {
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: transform 0.2s;
+      background-color: #222;
+      display: flex;
+      align-items: center;
+    }
 
-.social-buttons a:hover {
-  transform: scale(1.1);
-}
+    .social-buttons a:hover {
+      transform: scale(1.1);
+    }
 
-.twitter { background: #1DA1F2; }
-.facebook { background: #1877F2; }
-.instagram { background: #E4405F; }
+    .social-buttons svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
 
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  color: #666;
-}
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head><body>
   <header>
     <img src="logo_caescyt.png" alt="Logo VI CAESCyT">
     <h1>VI Congreso Argentino de Estudios Sociales de la Ciencia y la Tecnología</h1>
-  </header>  <nav>
+  </header>
+
+  <nav>
     <a href="#registro">Inscripción</a>
     <a href="#resumenes">Resúmenes</a>
     <a href="#trabajos">Trabajos</a>
     <a href="#mapa">Ubicación</a>
-  </nav>  <section id="registro">
+  </nav>
+
+  <section id="registro">
     <h2>Inscripción</h2>
     <div class="iframe-container">
       <script src="https://www.aacademica.org/vendor/js/iframe-resizer/3.5.14/iframeResizer.min.js"></script>
       <iframe onload='iFrameResize({heightCalculationMethod: "max"}, this);' scrolling="no" src='https://www.aacademica.org/embedded/vi.caescyt'></iframe>
     </div>
-  </section>  <section id="resumenes">
+  </section>
+
+  <section id="resumenes">
     <h2>Resúmenes</h2>
     <div class="iframe-container">
       <script src="https://www.aacademica.org/vendor/js/iframe-resizer/3.5.14/iframeResizer.min.js"></script>
       <iframe onload='iFrameResize({heightCalculationMethod: "max"}, this);' scrolling="no" src='https://www.aacademica.org/embedded-list/vi.caescyt/abstracts'></iframe>
     </div>
-  </section>  <section id="trabajos">
-    <h2>Trabajos completos</h2>
+  </section>
+
+  <section id="trabajos">
+    <h2>Trabajos</h2>
     <div class="iframe-container">
       <script src="https://www.aacademica.org/vendor/js/iframe-resizer/3.5.14/iframeResizer.min.js"></script>
       <iframe onload='iFrameResize({heightCalculationMethod: "max"}, this);' scrolling="no" src='https://www.aacademica.org/embedded-list/vi.caescyt/proceedings'></iframe>
     </div>
-  </section>  <section id="mapa">
+  </section>
+
+  <section id="mapa">
     <h2>¿Dónde se realiza?</h2>
     <div class="iframe-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6861590161275!2d-58.41730908477074!3d-34.611780880455664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb29ef7f2a7b%3A0x5f6b117ffef44a7d!2sUniversidad%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1614690788579!5m2!1ses!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://maps.google.com/maps?q=https://maps.app.goo.gl/Udd8eBdYVbjRUb7cA&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-  </section>  <section>
-    <h2>Seguí el congreso en redes</h2>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
     <div class="social-buttons">
-      <a href="#" class="twitter">Twitter</a>
-      <a href="#" class="facebook">Facebook</a>
-      <a href="#" class="instagram">Instagram</a>
+      <a href="mailto:contacto@caescyt.org" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11.5 19h-3v-10h3v10zm-1.5-11.3c-1 0-1.7-.8-1.7-1.7s.8-1.7 1.7-1.7c1 0 1.7.8 1.7 1.7s-.8 1.7-1.7 1.7zm13 11.3h-3v-5.6c0-1.4-.5-2.3-1.7-2.3-.9 0-1.4.6-1.6 1.1-.1.2-.1.5-.1.7v6.1h-3v-10h3v1.4c.4-.7 1.1-1.7 2.7-1.7 2 0 3.5 1.3 3.5 4.1v6.2z"/></svg>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-.5a1 1 0 100 2 1 1 0 000-2z"/></svg>
+      </a>
     </div>
-  </section>  <footer>
+  </section>
+
+  <footer>
     VI CAESCyT - Congreso Argentino de Estudios Sociales de la Ciencia y la Tecnología. Diseño sin fines de lucro.
   </footer>
 </body></html>
